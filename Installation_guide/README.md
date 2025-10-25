@@ -81,7 +81,7 @@ cd flow
 make
 ```
 
-![Alt Text](gds_final.png)
+![Alt Text](final_gds.png)
 
 ### 6. Launch the graphical user interface (GUI) to visualize the final layout
 
