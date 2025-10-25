@@ -65,9 +65,14 @@ source ./env.sh
 yosys -help  
 openroad -help
 ```
-![Alt Text](Images/installation3.jpg)
+![Alt Text](verify.png)
 
-![Alt Text](Images/installation4.jpg)
+
+![Alt Text](verify2.png)
+
+
+![Alt Text](verify3.png)
+
 
 ### 5. Run the OpenROAD Flow
 
@@ -76,7 +81,7 @@ cd flow
 make
 ```
 
-![Alt Text](Images/installation5.jpg)
+![Alt Text](gds_final.png)
 
 ### 6. Launch the graphical user interface (GUI) to visualize the final layout
 
@@ -84,6 +89,6 @@ make
  make gui_final
 ```
 
-![Alt Text](Images/installation6.jpg)
+![Alt Text](gui_flow.png)
 
 ✅ Installation Complete! You can now explore the full RTL-to-GDSII flow using OpenROAD.
