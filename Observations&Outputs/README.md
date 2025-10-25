@@ -13,7 +13,7 @@
 | *7. GDSII Generation* | Exports final *GDSII* file for fabrication after all checks are clean. | final.gds |
 
 
-##### Glimpses of the flow.tcl file
+### Glimpses of the flow.tcl file
 
 ![alt](flow.tcl.png)
 
@@ -61,6 +61,76 @@ make DESIGN_CONFIG=./designs/nangate45/gcd/config.mk floorplan
 ![alt](cell_report.png)
 
 ---
+
+
+### 🧩 Placement Stage
+
+After completing floorplanning, the next major step in the physical design flow is *Placement*.  
+Placement determines the exact locations of all *standard cells* within the defined core area, aiming to minimize delay, wirelength, and routing congestion.
+
+---
+
+### ⚙️ Purpose of Placement
+- Arranges all standard cells legally inside the *core boundary*.  
+- Optimizes total *wirelength* and ensures cells are aligned to *placement rows*.  
+- Prepares the design for *Clock Tree Synthesis (CTS)* and *Routing*.  
+
+---
+
+### 🧠 What Happens Internally
+1. *Global Placement*  
+   - Performs a coarse placement of standard cells to estimate wirelength and congestion.  
+   - The algorithm spreads cells evenly to avoid clustering.
+
+2. *Detailed Placement*  
+   - Fine-tunes positions to align cells exactly on legal grid sites.  
+   - Ensures no overlaps, spacing violations, or out-of-bound placements.
+
+3. *Placement Optimization*  
+   - Adjusts for timing, density, and congestion hotspots.
+
+---
+
+### 🧰 Commands Used
+
+```bash
+cd OpenROAD-flow-scripts/flow
+make DESIGN_CONFIG=./designs/nangate45/gcd/config.mk place
+```
+
+![alt](placement.png)
+
+![alt](placement2.png)
+
+
+#### Timing report in the flow
+
+
+![alt](timing.png)
+
+
+#### Standard Cells placed
+
+
+![alt](standard_cells.png)
+
+
+#### Inverter cell
+
+![alt](inverter.png)
+
+
+### Examples to Test
+
+#### gcd_nangate45.tcl file
+
+
+![alt](nangate_tcl.png)
+
+
+#### Die area and Rows
+
+![alt](nangate_tcl_rows.png)
 
 
 
