@@ -15,11 +15,11 @@ Key goals include:
 
 -[Installation Guide](./Installation_guide/README.md)
 
--[Overall flow of OpenROAD](./Observatios&Outputs/README.md)
+-[Overall flow of OpenROAD](./Observations&Outputs/README.md)
 
 -[Erros encountered while installation](./ERRORS_faced/README.md)
 
 
 ### References
 
-[OpenROAD-Project]() - Github repo
+[OpenROAD-Project](https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts) - Github repo
