@@ -89,6 +89,6 @@ make
  make gui_final
 ```
 
-![Alt Text](gui_flow.png)
+![Alt Text](gui_final.png)
 
 ✅ Installation Complete! You can now explore the full RTL-to-GDSII flow using OpenROAD.
