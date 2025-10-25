@@ -13,11 +13,11 @@ Key goals include:
 
 ### 📂 Repository Structure 
 
--[Installation Guide]()
+-[Installation Guide](./Installation_guide/README.md)
 
--[Overall flow of OpenROAD]()
+-[Overall flow of OpenROAD](./Observatios&Outputs/README.md)
 
--[Erros encountered while installation]()
+-[Erros encountered while installation](./ERRORS_faced/README.md)
 
 
 ### References
