@@ -117,7 +117,7 @@ make DESIGN_CONFIG=./designs/nangate45/gcd/config.mk place
 
 #### Inverter cell
 
-![alt](inverter.png)
+![alt](inverter_cell.png)
 
 
 ### Examples to Test
